@@ -9,7 +9,7 @@ def home(request):
 @login_required
 def create(request):
     if request.method == 'POST':
-        if request.POST['title'] and request.POST['body'] and request.POST['url'] and request.FILES['icon'] and request.FILES['image']:
+        if request.POST['title'] and request.POST['body'] and request.POST['url'] and request.POST['icon'] and request.POST['image']:
             product = Product()
             product.title = request.POST['title']
             product.body = request.POST['body']
@@ -17,8 +17,8 @@ def create(request):
                 product.url = request.POST['url']
             else:
                 product.url = 'http://' + request.POST['url']
-            product.icon = request.FILES['icon']
-            product.image = request.FILES['image']
+            product.icon = request.POST['icon']
+            product.image = request.POST['image']
             product.pub_date = timezone.datetime.now()
             product.hunter = request.user
             product.save()
