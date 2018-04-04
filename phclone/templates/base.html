@@ -8,11 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Richard Rhodes Homepage</title>
+    <title>Product Hunt Build Clone</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'open-iconic/font/css/opn-iconic-bootstrap.css' %}">
+    <link href="{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
   </head>
@@ -22,7 +22,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-            <a class="navbar-brand" href="">
+            <a class="navbar-brand" href="{% url 'home' %}">
             <img src="{% static 'logo.png' %}" height=30 width=30 class="d-inline-block align-top" />
             Product Hunt
             </a>
