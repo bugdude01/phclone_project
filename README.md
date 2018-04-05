@@ -1,5 +1,6 @@
-# phclone_project
-Clone of Product Hunter to show use of Django.
+# Product Hunt Clone
+
+## Clone of Product Hunter to show use of Django.
 
 Hi guys, here's a neat little projct. The idea was to make a simple clone of a website called Product Hunt (http://www.producthunt.com) using
 Python and Django to illustrate how easy it would be to build, use a small database, handle authentications etc.
